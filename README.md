@@ -29,3 +29,35 @@ Open http://localhost:3000 to view it in your browser.
 ### `yarn build`
 
 Builds the app for production to the `dist` folder.
+
+## 체크리스트
+
+- [ ] 개발 전 `tsconfig.json`에서 `compilerOptions.paths`로 alias 설정하기
+
+```JSON
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@common/*": ["src/common/*"],
+      "src/*": ["src/*"]
+    }
+  }
+}
+```
+
+- [ ] 환경변수 자동완성을 위해 전역 타입 정의하기
+
+```typescript
+declare namespace NodeJS {
+  interface ProcessEnv {
+    TEST: string;
+  }
+}
+```
+
+## TODO
+
+- [ ] `react-router-dom` 설치, 설정
+- [ ] `styled-components` Theming
+- [ ] `husky`, `lint-staged`로 린트 자동화
