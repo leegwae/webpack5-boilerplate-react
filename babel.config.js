@@ -4,5 +4,8 @@ module.exports = {
     '@babel/preset-react',
     '@babel/preset-typescript'
   ],
-  plugins: [['@babel/plugin-transform-runtime', { corejs: 3, proposals: true, regenerator: true }]]
+  plugins: [
+    ['@babel/plugin-transform-runtime', { corejs: 3, proposals: true, regenerator: true }],
+    ['babel-plugin-styled-components', { ssr: false }]
+  ]
 }
