@@ -7,6 +7,7 @@ const App = () => {
     <>
       <GlobalStyle />
       <Button>버튼</Button>
+      <div>process.env.TEST: {process.env.TEST}</div>
     </>
   );
 };
