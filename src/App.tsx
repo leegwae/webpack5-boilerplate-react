@@ -1,6 +1,6 @@
 import React from 'react';
-import GlobalStyle from './common/components/GlobalStyle';
-import Button from './common/components/Button';
+import GlobalStyle from '@common/components/GlobalStyle';
+import Button from '@common/components/Button';
 
 const App = () => {
   return (
