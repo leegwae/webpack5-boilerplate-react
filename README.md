@@ -32,7 +32,7 @@ Builds the app for production to the `dist` folder.
 
 ## 체크리스트
 
-- [ ] 개발 전 `tsconfig.json`에서 `compilerOptions.paths`로 alias 설정하기
+- [ ] `tsconfig.json`에서 `compilerOptions.paths`로 절대 경로 alias 설정하기
 
 ```JSON
 {
@@ -40,11 +40,28 @@ Builds the app for production to the `dist` folder.
     "baseUrl": "./",
     "paths": {
       "@common/*": ["src/common/*"],
-      "src/*": ["src/*"]
+      "@src/*": ["src/*"]
     }
   }
 }
 ```
+
+```TypeScript
+import React from 'react';
+import Button from '@common/components/Button';
+
+const App = () => {
+  return (
+    <>
+      <Button>버튼</Button>
+    </>
+  );
+};
+
+export default App;
+```
+
+fb8b532ceaa7cbab835920d1288f76db4329a4ab 참고
 
 - [ ] 환경변수 자동완성을 위해 전역 타입 정의하기
 
