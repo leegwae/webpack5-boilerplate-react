@@ -61,8 +61,6 @@ const App = () => {
 export default App;
 ```
 
-fb8b532ceaa7cbab835920d1288f76db4329a4ab 참고
-
 - [ ] 환경변수 자동완성을 위해 전역 타입 정의하기
 
 ```typescript
